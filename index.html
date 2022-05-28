@@ -16,24 +16,24 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="index.html" class="navigation-link">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">О Седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span>
+          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span>
+          <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link"><span class="button-brown">хочу сюда!</span></a>
+          <a class="navigation-link" href="#"><span class="button-brown">хочу сюда!</span></a>
         </li>
       </ul>
     </nav>
@@ -43,7 +43,7 @@
   <main class="main-index">
     <h1 class="page-title visually-hidden">Седона</h1>
     <section class="welcome">
-      <img class="welcome-text" src="img/welcome.svg" width="458" height="352">
+      <img class="welcome-text" src="/img/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
     </section>
     <div class="center-text">
       <h2 class="title">Седона — небольшой городок в Аризоне,
@@ -56,30 +56,28 @@
         <!--Список причин-->
         <li class="reasons__main-item">
           <!-----------------------------Причина №1 НАЧАЛО------------------------------->
-
-
           <div class="block__blue"></div>
           <h3 class="reasons-title">Настоящий городок</h3>
           <span class="reasons-numbers">— №1 —</span>
           <p class="reasons-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="reasons-item-img" src="img/reasons№1.jpg" width="800" height="384" alt="Вид городка Седона">
+          <img class="reasons-item-img" src="/img/reasons1.jpg" width="800" height="384" alt="Вид городка Седона">
           </div>
           <!--------Дополнительный список НАЧАЛО----------------------------------------->
           <ul class="reasons__aside-list">
             <li class="reasons__aside-item">
-              <img class="reasons__aside-item-logo" src="img/жильё.svg" width="74.7" height="72" alt="">
+              <img class="reasons__aside-item-logo" src="img/housing.svg" width="75" height="72" alt="">
               <h3 class="reasons__aside-title">Жильё</h3>
               <p class="reasons__aside-subtitle">Рекомендуем пожитьв настоящем мотеле,
                 всё как в кино!</p>
             </li>
             <li class="reasons__aside-item">
-              <img class="reasons__aside-item-logo" src="img/еда.svg" width="73.81" height="70" alt="">
+              <img class="reasons__aside-item-logo" src="img/food.svg" width="74" height="70" alt="">
               <h3 class="reasons__aside-title">Еда</h3>
               <p class="reasons__aside-subtitle">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="reasons__aside-item">
-              <img class="reasons__aside-item-logo" src="img/сувениры.svg" width="64" height="75.95" alt="">
+              <img class="reasons__aside-item-logo" src="img/souvenirs.svg" width="64" height="76" alt="">
               <h3 class="reasons__aside-title">Сувениры</h3>
               <p class="reasons__aside-subtitle">Не только китайского,
                 но и настоящего местного производства!</p>
@@ -90,7 +88,7 @@
         <!-----------------------------Причина №1 КОНЕЦ------------------------------->
         <li class="reasons__main-item">
           <!-----------------------------Причина №2 НАЧАЛО------------------------------->
-          <img class="reasons-item-img " src="img/reasons№2.jpg" width="800" height="384" alt="Мост дьявола">
+          <img class="reasons-item-img " src="img/reasons2.jpg" width="800" height="384" alt="Мост дьявола">
           <div class="block__blue">
             <h3 class="reasons-title">Там есть мост дьявола</h3>
             <span class="reasons-numbers">— №2 —</span>
@@ -139,7 +137,7 @@
       <form action="#" method="post">
         <label class="visually-hidden" for="email">Введите email:</label>
         <input type="email" name="email" id="email" placeholder="Ваш e-mail">
-        <button class="button">Подписаться</button>
+        <button class="button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
@@ -148,26 +146,26 @@
   <footer class="footer">
     <ul class="footer-socials-list">
       <li class="footer-socials-item">
-        <span class="visually-hidden">vk</span>
         <a class="footer-socials-link" href="">
-          <img src="img/vk-icon.svg" width="24" height="14" alt="">
+          <span class="visually-hidden">vk</span>
+          <img src="/img/vk-icon.svg" width="24" height="14" alt="">
         </a>
       </li>
       <li class="footer-socials-item">
-        <span class="visually-hidden">telegram</span>
         <a class="footer-socials-link" href="">
-          <img src="img/telegram-icon.svg" width="18" height="15.1" alt="">
+          <span class="visually-hidden">telegram</span>
+          <img src="/img/telegram-icon.svg" width="18" height="15" alt="">
         </a>
       </li>
       <li class="footer-socials-item">
-        <span class="visually-hidden">youtube</span>
         <a class="footer-socials-link" href="">
-          <img src="img/youtube-icon.svg" width="22" height="17" alt="">
+          <span class="visually-hidden">youtube</span>
+          <img src="/img/youtube-icon.svg" width="22" height="17" alt="">
         </a>
       </li>
     </ul>
     <p class="footer-numbers">+7 (812) 812-12-12</p>
-    <img class="footer-icon" src="img/HTMLacademy-icon.png" width="114.9" height="32.9" alt="">
+    <img class="footer-icon" src="/img/html_academy.svg" width="115" height="33" alt="">
   </footer>
   <!-- ------------------------------footer end-------------------- -->
 </body>
