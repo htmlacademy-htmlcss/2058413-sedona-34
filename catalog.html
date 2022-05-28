@@ -10,11 +10,13 @@
 <body>
     <!-- ------------------------------header start-------------------- -->
     <header class="header">
-        <img src="#" alt="Логотип Сидона сити" class="logo">
+        <a class="homepage-link" href="index.html">
+            <img src="#" alt="Логотип Сидона сити" class="logo">
+        </a>
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">Главная</a>
+                    <a href="index.html" class="navigation-link">Главная</a>
                 </li>
                 <li class="navigation-item">
                     <a href="#" class="navigation-link">О Седоне</a>
@@ -37,6 +39,7 @@
         </nav>
     </header>
     <!-- ------------------------------header end-------------------- -->
+    <!-- ------------------------------main start-------------------- -->
     <main>
         <section class="filter">
             <h1 class="page-title visually-hidden">Гостиницы Седоны</h1>
@@ -117,6 +120,7 @@
         </section>
         <section class="search__results">
             <header class="search__results-header">
+                <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
                 <p class="search__results-text">Найдено гостиниц: <span class="value">38</span></p>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="cheap">Сначала дешёвые</option>
@@ -127,14 +131,154 @@
                     <span class="visually-hidden">Показать карточки</span>
                 </a>
                 <a class="button" href="#">
-                    <span class="visually-hidden">Показать виджет</span>
+                    <span class="visually-hidden">Показать виджеты</span>
                 </a>
                 <a href="#" class="button button-light">
                     <span class="visually-hidden">Показать список</span>
                 </a>
             </header>
+            <!--Карточки гостиниц НАЧАЛО-->
+            <div class="card">
+                <a class="card-link">
+                    <img src="img/card-Amara.jpg" alt="Amara Resort and Spa" class="card-img">
+                    <h3 class="card-title">Amara Resort & Spa</h3>
+                </a>
+                <span class="card__category">Гостиница</span>
+                <span class="card__price">От 4000 ₽</span>
+                <a class="card__open button" href="">подробнее</a>
+                <a class="card__selected button" href="">в избранное</a>
+                <div class="card__rating">
+                    <div class="card__rating-icon">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                    </div>
+                    <p class="card__rating-value"><span class="rating-value"> Рейтинг: 8,5</span></p>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <div class="card">
+                <a class="card-link">
+                    <img class="card-img" src="img/card-Villas.jpg" alt="Villas at Poco Diablo">
+                    <h3 class="card-title">Villas at Poco Diablo</h3>
+                </a>
+                <span class="card__category">Гостиница</span>
+                <span class="card__price">От 5000 ₽</span>
+                <a class="card__open button" href="">подробнее</a>
+                <a class="card__selected button" href="">в избранное</a>
+                <div class="card__rating">
+                    <div class="card__rating-icon">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                    </div>
+                    <p class="card__rating-value"><span class="rating-value"> Рейтинг: 9,2</span></p>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <div class="card">
+                <a class="card-link">
+                    <img class="card-img" src="img/card-Desert.jpg" alt="Desert Quail Inn">
+                    <h3 class="card-title">Desert Quail Inn</h3>
+                </a>
+                <span class="card__category">Гостиница</span>
+                <span class="card__price">От 2500 ₽</span>
+                <a class="card__open button" href="">подробнее</a>
+                <a class="card__selected button" href="">в избранное</a>
+                <div class="card__rating">
+                    <div class="card__rating-icon">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                    </div>
+                    <p class="card__rating-value"><span class="rating-value">Рейтинг: 6,9</span></p>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------->
+            <div class="card">
+                <a class="card-link">
+                    <img class="card-img" src="img/card-GreenTree.jpg" alt="GreenTree Inn">
+                    <h3 class="card-title">GreenTree Inn</h3>
+                </a>
+                <span class="card__category">Гостиница</span>
+                <span class="card__price">От 1500 ₽</span>
+                <a class="card__open button" href="">подробнее</a>
+                <a class="card__selected button" href="">в избранное</a>
+                <div class="card__rating">
+                    <div class="card__rating-icon">
+                        <img class="rating__icon" src="" alt="">
+                        <img class="rating__icon" src="" alt="">
+                    </div>
+                    <p class="card__rating-value"><span class="rating-value">Рейтинг: 5,0</span></p>
+                </div>
+            </div>
+            <!--Карточки гостиниц КОНЕЦ-->
+            <!--Пагинация-->
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">10</a>
+                </li>
+            </ul>
+            <p class="amount-card__text">Гостиниц на странице:</p>
+            <div class="window-value">
+                <span class="amount-card__value">4</span>
+                <img class="icon-open__list" src="" alt="">
+            </div>
         </section>
     </main>
+    <!-- ------------------------------main end-------------------- -->
+    <section class="subscription-no__background center-text">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="#" method="post">
+            <label class="visually-hidden" for="email">Введите email:</label>
+            <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+            <button class="button">Подписаться</button>
+        </form>
+    </section>
+    <!-- ------------------------------footer start-------------------- -->
+    <footer class="footer">
+        <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+                <span class="visually-hidden">vk</span>
+                <a class="footer-socials-link" href="">
+                    <img src="img/vk-icon.svg" alt="">
+                </a>
+            </li>
+            <li class="footer-socials-item">
+                <span class="visually-hidden">telegram</span>
+                <a class="footer-socials-link" href="">
+                    <img src="img/telegram-icon.svg" alt="">
+                </a>
+            </li>
+            <li class="footer-socials-item">
+                <span class="visually-hidden">youtube</span>
+                <a class="footer-socials-link" href="">
+                    <img src="img/youtube-icon.svg" alt="">
+                </a>
+            </li>
+        </ul>
+        <p class="footer-numbers">+7 (812) 812-12-12</p>
+        <img class="footer-icon" src="img/HTMLacademy-icon.png" alt="">
+    </footer>
+    <!-- ------------------------------footer end-------------------- -->
 </body>
 
 </html>
