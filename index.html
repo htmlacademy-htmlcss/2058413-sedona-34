@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <!-- ------------------------------header start-------------------- -->
+  <header class="header">
+    <a class="homepage-link" href="index.html">
+      <img src="/img/logo-head.svg" width="139" height="70" alt="Логотип Сидона сити" class="logo">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="button-brown">хочу сюда!</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ------------------------------header end-------------------- -->
+  <!-- ------------------------------main start-------------------- -->
+  <main class="main-index">
+    <h1 class="page-title visually-hidden">Седона</h1>
+    <section class="welcome">
+      <img class="welcome-text" src="/img/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+    </section>
+    <div class="center-text">
+      <h2 class="title">Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</h2>
+      <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
+    <section class="reasons-section">
+      <h2 class="visually-hidden">Причины</h2>
+      <ul class="reasons-list">
+        <!--Список причин-->
+        <li class="reasons__main-item">
+          <!-----------------------------Причина №1 НАЧАЛО------------------------------->
+          <div class="block__blue"></div>
+          <h3 class="reasons-title">Настоящий городок</h3>
+          <span class="reasons-numbers">— №1 —</span>
+          <p class="reasons-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="reasons-item-img" src="/img/reasons1.jpg" width="800" height="384" alt="Вид городка Седона">
+          </div>
+          <!--------Дополнительный список НАЧАЛО----------------------------------------->
+          <ul class="reasons__aside-list">
+            <li class="reasons__aside-item">
+              <img class="reasons__aside-item-logo" src="img/housing.svg" width="75" height="72" alt="">
+              <h3 class="reasons__aside-title">Жильё</h3>
+              <p class="reasons__aside-subtitle">Рекомендуем пожитьв настоящем мотеле,
+                всё как в кино!</p>
+            </li>
+            <li class="reasons__aside-item">
+              <img class="reasons__aside-item-logo" src="img/food.svg" width="74" height="70" alt="">
+              <h3 class="reasons__aside-title">Еда</h3>
+              <p class="reasons__aside-subtitle">Всегда заказывайте
+                топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="reasons__aside-item">
+              <img class="reasons__aside-item-logo" src="img/souvenirs.svg" width="64" height="76" alt="">
+              <h3 class="reasons__aside-title">Сувениры</h3>
+              <p class="reasons__aside-subtitle">Не только китайского,
+                но и настоящего местного производства!</p>
+            </li>
+          </ul>
+          <!--------Дополнительный список КОНЕЦ----------------------------------------->
+        </li>
+        <!-----------------------------Причина №1 КОНЕЦ------------------------------->
+        <li class="reasons__main-item">
+          <!-----------------------------Причина №2 НАЧАЛО------------------------------->
+          <img class="reasons-item-img " src="img/reasons2.jpg" width="800" height="384" alt="Мост дьявола">
+          <div class="block__blue">
+            <h3 class="reasons-title">Там есть мост дьявола</h3>
+            <span class="reasons-numbers">— №2 —</span>
+            <p class="reasons-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
+        </li>
+        <!-----------------------------Причина №2 КОНЕЦ------------------------------->
+        <li class="reasons__main-item">
+          <!-----------------------------Причина №3 НАЧАЛО------------------------------->
+          <div>
+            <h3 class="reasons-title">Небольшая площадь</h3>
+            <span class="reasons-numbers">— №3 —</span>
+            <p class="reasons-subtitle">Все достопримечательности находятся очень близко</p>
+          </div>
+        </li>
+        <!-----------------------------Причина №3 КОНЕЦ------------------------------->
+        <li class="reasons__main-item">
+          <!-----------------------------Причина №4 НАЧАЛО------------------------------->
+          <div>
+            <h3 class="reasons-title">Красивая дорога</h3>
+            <span class="reasons-numbers">— №4 —</span>
+            <p class="reasons-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </li>
+        <!-----------------------------Причина №4 КОНЕЦ------------------------------->
+        <li class="reasons__main-item">
+          <!-----------------------------Причина №5 НАЧАЛО------------------------------->
+          <div>
+            <h3 class="reasons-title">Мало туристов</h3>
+            <span class="reasons-numbers">— №5 —</span>
+            <p class="reasons-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </li>
+        <!-----------------------------Причина №5 КОНЕЦ------------------------------->
+      </ul>
+    </section>
+    <section class="search-block">
+      <h2 class="search-title">Заинтересовались?</h2>
+      <p class="search-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+    </section>
+    <section class="subscription-background center-text">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="#" method="post">
+        <label class="visually-hidden" for="email">Введите email:</label>
+        <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+        <button class="button" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+  <!-- ------------------------------main end-------------------- -->
+  <!-- ------------------------------footer start-------------------- -->
+  <footer class="footer">
+    <ul class="footer-socials-list">
+      <li class="footer-socials-item">
+        <a class="footer-socials-link" href="">
+          <span class="visually-hidden">vk</span>
+          <img src="/img/vk-icon.svg" width="24" height="14" alt="">
+        </a>
+      </li>
+      <li class="footer-socials-item">
+        <a class="footer-socials-link" href="">
+          <span class="visually-hidden">telegram</span>
+          <img src="/img/telegram-icon.svg" width="18" height="15" alt="">
+        </a>
+      </li>
+      <li class="footer-socials-item">
+        <a class="footer-socials-link" href="">
+          <span class="visually-hidden">youtube</span>
+          <img src="/img/youtube-icon.svg" width="22" height="17" alt="">
+        </a>
+      </li>
+    </ul>
+    <p class="footer-numbers">+7 (812) 812-12-12</p>
+    <img class="footer-icon" src="/img/html_academy.svg" width="115" height="33" alt="">
+  </footer>
+  <!-- ------------------------------footer end-------------------- -->
+</body>
+
 </html>
