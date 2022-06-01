@@ -20,6 +20,7 @@
 
 body {
     font-family: "PT Sans", sans-serif;
+
 }
 
 .header {
@@ -83,4 +84,41 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+}
+
+.block__blue-item {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    width: 400px;
+    height: 384px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reasons-title {
+    text-transform: uppercase;
+}
+
+.reasons-list {
+    list-style-type: none;
+}
+
+.block__blue {
+    display: flex;
+}
+
+.reasons__aside-list {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.reasons__main-block {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
 }
