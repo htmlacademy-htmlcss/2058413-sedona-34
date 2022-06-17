@@ -75,6 +75,7 @@ body {
     flex-direction: row;
     text-decoration: none;
     list-style-type: none;
+    align-items: center;
 }
 
 .navigation-item {
@@ -88,10 +89,9 @@ body {
     color: #FFFFFF;
     background-color: #756157;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    text-align: center;
     padding: 9px 15px 8px 15px;
+    border-radius: 4px;
+    width: 160px;
 }
 
 
@@ -360,11 +360,21 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    border: 0;
+    padding: 14px 15px;
+    width: 160px;
+    height: 48px;
 }
 
 /*---------------------------------------КАТАЛОГ-------------------------------------------------------*/
 .filter {
-    background-color: #756157;
+    background-image: url(../img/catalog-background.jpg);
+    margin-bottom: 62px;
+}
+
+.price {
+    color: #FFFFFF;
+    margin: 0;
 }
 
 .page-title {
@@ -372,16 +382,36 @@ body {
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+    margin: 0;
+}
+
+.filter-wrapper {
+    padding-left: 70px;
 }
 
 .breadcrumbs {
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 .breadcrumbs-link {
     text-decoration: none;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.catalog-filter {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-page {
+    font-size: 16px;
+}
+
+.breadcrumbs-item {
+    padding-right: 10px;
 }
 
 .catalog-filter-title {
@@ -415,7 +445,10 @@ body {
 
 }
 
-.select-control {}
+.button-filter-reset {
+    background: none;
+    border: 0;
+}
 
 .card-title {
     font-weight: 700;
@@ -526,7 +559,69 @@ body {
     color: #000000;
 }
 
+.search__results {
+    width: 1056px;
+    margin: 0 auto;
+}
+
 .search-button {
     border: 0;
     padding: 12px 15px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin-right: 18px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1074px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.amount-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__results-text {
+    margin: 0;
+}
+
+.sorting-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.display__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.display__item {
+    border: #000000 2 solid;
+}
+
+.margin-item {
+    margin-left: 10px;
+    margin-right: 10px;
 }
