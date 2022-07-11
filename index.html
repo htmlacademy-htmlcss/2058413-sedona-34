@@ -57,6 +57,79 @@
         </ul>
       </nav>
     </header>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="position">
+              <p class="auth-date">
+                <label class="field" for="auth-date">Дата Заезда:</label>
+                <input class="auth-form-field error" type="text" name="date-leaving" id="auth-date"
+                  placeholder="27 апреля 2020" required>
+              </p>
+              <span class="text-form red">Мы не можем отправить вас в прошлое.</span>
+              <p class="auth-date">
+                <label class="field" for="auth-date-leaving">Дата Выезда:</label>
+                <input class="auth-form-field error" type="text" name="date" id="auth-date-leaving"
+                  placeholder="1 сентября 2021" required>
+              </p>
+              <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="group-choice">
+              <div class="adults">
+                <label class="field-adults" for="adults">Взрослые:</label>
+                <span class="visually-hidden">Уменьшить.</span>
+                <button class="button button-minus" type="button">
+                </button>
+                <input class="form-field" type="number" name="adults" id="adults" value="2" min="1" required>
+                <span class="visually-hidden">Увеличить.</span>
+                <button class="button button-plus" type="button">
+                </button>
+              </div>
+              <div class="child">
+                <span class="field-child">
+                  <label class="field-child" for="child">
+                    Дети:
+                    <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#a)">
+                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path d="M0 0h1v9H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                      будут
+                      с вами, возраст которых от 6 до 18
+                      лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <span class="visually-hidden">Уменьшить.</span>
+                <button class="button button-minus" type="button">
+                </button>
+                <input class="form-field" type="number" name="child" id="child" value="1">
+                <span class="visually-hidden">Увеличить.</span>
+                <button class="button button-plus" type="button">
+                </button>
+              </div>
+            </div>
+            <button class="button modal-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
     <main class="main-container">
       <div class="welcome">
         <h1 class="visually-hidden main-header">Седона: город-курорт</h1>
@@ -68,7 +141,6 @@
           заслуживающий большего!</h2>
         <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-      <!-- Преимущества-->
       <section>
         <h2 class="visually-hidden reasons-header">Преимущества</h2>
         <ul class="reasons-list">
@@ -203,78 +275,6 @@
       </section>
     </footer>
   </div>
-  <div class="modal-container modal-container-close">
-    <div class="modal modal-auth">
-      <button class="modal-close-button" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      <section class="modal-content">
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="position">
-            <p class="auth-date">
-              <label class="field" for="auth-date">Дата Заезда:</label>
-              <input class="auth-form-field error" type="text" name="date-leaving" id="auth-date"
-                placeholder="27 апреля 2020" required>
-            </p>
-            <span class="text-form red">Мы не можем отправить вас в прошлое.</span>
-            <p class="auth-date">
-              <label class="field" for="auth-date-leaving">Дата Выезда:</label>
-              <input class="auth-form-field error" type="text" name="date" id="auth-date-leaving"
-                placeholder="1 сентября 2021" required>
-            </p>
-            <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
-          </div>
-          <div class="group-choice">
-            <div class="adults">
-              <label class="field-adults" for="adults">Взрослые:</label>
-              <span class="visually-hidden">Уменьшить.</span>
-              <button class="button button-minus" type="button">
-              </button>
-              <input class="form-field" type="number" name="adults" id="adults" value="2" min="1" required>
-              <span class="visually-hidden">Увеличить.</span>
-              <button class="button button-plus" type="button">
-              </button>
-            </div>
-            <div class="child">
-              <span class="field-child">
-                <label class="field-child" for="child">
-                  Дети:
-                  <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
-                </label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
-                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                      </g>
-                      <defs>
-                        <clipPath id="a">
-                          <path d="M0 0h1v9H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
-                    будут
-                    с вами, возраст которых от 6 до 18
-                    лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-              </span>
-              <span class="visually-hidden">Уменьшить.</span>
-              <button class="button button-minus" type="button">
-              </button>
-              <input class="form-field" type="number" name="child" id="child" value="1">
-              <span class="visually-hidden">Увеличить.</span>
-              <button class="button button-plus" type="button">
-              </button>
-            </div>
-          </div>
-          <button class="button modal-submit" type="submit">Найти</button>
-        </form>
-      </section>
-    </div>
-  </div>
 </body>
+
 </html>
