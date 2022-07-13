@@ -984,6 +984,7 @@ body {
   cursor: pointer;
 }
 
+
 .breadcrumbs-link.union {
   position: relative;
 }
@@ -1002,8 +1003,8 @@ body {
   opacity: 0.6;
 }
 
-.breadcrumbs-link.union:focus {
-  outline: none;
+.breadcrumbs-link.union:focus:after {
+  outline: none
 }
 
 .breadcrumbs-link.union:active::after {
