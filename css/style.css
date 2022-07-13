@@ -967,52 +967,27 @@ body {
   margin-bottom: 10px;
 }
 
-.breadcrumbs {
-  display: flex;
-  margin: 0;
+.breadcrums {
+  margin: 0 0 40px 0;
   padding: 0;
+  display: flex;
   list-style-type: none;
-  background: url("../images/arrow.svg") no-repeat 24px center;
+  gap: 10px;
 }
 
-.breadcrumbs-link {
+.breadcrums-item {
   display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 21px;
-  text-align: left;
-  text-decoration: none;
-  cursor: pointer;
 }
 
-
-.breadcrumbs-link.union {
-  position: relative;
-}
-
-.breadcrumbs-link.union::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 1px;
-  width: 12px;
-  height: 12px;
-  background: url("../images/breadcrubs-union.svg") no-repeat left;
-}
-
-.breadcrumbs-link.union:hover::after {
-  opacity: 0.6;
-}
-
-.breadcrumbs-link.union:focus:after {
-  outline: none
-}
-
-.breadcrumbs-link.union:active::after {
-  opacity: 0.3;
-}
-
-.breadcrumbs-hotel {
-  padding-left: 38px;
+.breadcrums-item:hover,
+.breadcrums-item:hover .breadcrums-item-icon,
+.breadcrums-item :active,
+.breadcrums-item:active .breadcrums-item-icon {
+  color: #FFFFFF99;
+  fill: #FFFFFF99;
 }
 
 .wrapper-form {
@@ -1408,7 +1383,7 @@ body {
 
 .button:focus {
   background-color: #615048;
-  outline: none;
+  outline: 2px solid #83b3d3;
 }
 
 .button:active {
