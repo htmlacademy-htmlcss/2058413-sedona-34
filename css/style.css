@@ -214,6 +214,7 @@ body {
 .welcome-text {
   padding-top: 51px;
   padding-bottom: 81px;
+  box-sizing: content-box;
 }
 
 
