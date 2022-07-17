@@ -194,14 +194,16 @@ body {
 
 .welcome {
   background-color: rgb(153, 128, 121);
-  background: url("../images/index-background.jpg") center no-repeat;
-  text-align: center;
+  background-image: url("../images/index-background.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  text-align: center;
 }
 
 .welcome::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
